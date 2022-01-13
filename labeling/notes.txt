@@ -1,0 +1,33 @@
+location of grey box
+475 20 119 14 re
+box bottom left x
+box bottom left y
+box width x
+box height y
+
+location of text on top of grey box
+1 0 0 1 475 23 Tm
+text aspect
+text aspect
+text aspect
+text aspect
+text bottom left x
+text bottom left y
+
+
+FOR BOTTOM-RIGHT BATES LABEL
+box bottom left x = 594 - (characters * 7)
+
+FOR BOTTOM-LEFT BATES LABEL
+box bottom left x = 20
+
+FOR BOTTOM-CENTER BATES LABEL
+box bottom left x = 310 - (characters * 7 / 2)
+
+ALL LOCATIONS
+box width x = characters * 7
+text bottom left x = bottom left x
+
+TRAILER
+1 page, 3+page+stream+xref, 6 objects
+2 pages, 3+page+stream+page+stream+xref, 8 objects
