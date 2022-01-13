@@ -15,7 +15,7 @@ name=`basename "$1" .pdf`
 output=$dir/$name-bates.pdf
 
 ##### dump pdf data to so generate can determine number of pages #####
-"$pdftk" "$1" dump_data > "$data"
+pdftk "$1" dump_data > "$data"
 
 ##### generate labeling pdf to overlay #####
 "$generate" "$data" "$multistamp"
