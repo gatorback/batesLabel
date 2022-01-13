@@ -12,5 +12,5 @@ name=`basename "$1" .pdf`
 output=$dir/$name-cleaned.pdf
 
 ##### clean the pdf by doing a simple I/O through pdftk #####
-"$pdftk" "$1" output "$output"
+pdftk "$1" output "$output"
 

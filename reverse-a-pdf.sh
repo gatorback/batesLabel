@@ -12,5 +12,5 @@ name=`basename "$1" .pdf`
 output=$dir/$name-reversed.pdf
 
 ##### reverse the pdf through pdftk #####
-"$pdftk" "$1" cat end-1 output "$output"
+pdftk "$1" cat end-1 output "$output"
 

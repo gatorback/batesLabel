@@ -13,5 +13,5 @@ name2=`basename "$2" .pdf`
 output=$dir/$name-$name2-collated.pdf
 
 ##### collate the pdf through pdftk #####
-"$pdftk" A="$1" B="$2" shuffle A B output "$output"
+pdftk A="$1" B="$2" shuffle A B output "$output"
 

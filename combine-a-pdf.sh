@@ -13,8 +13,8 @@ output=$dir/combined.pdf
 
 ##### use pdftk to create a new pdf or append to an existing pdf #####
 if [ ! -e "$output" ]; then
-	"$pdftk" "$1" cat output "$output"
+	pdftk "$1" cat output "$output"
 else
-	"$pdftk" "$output" "$1" cat output "$output-2"
+	pdftk "$output" "$1" cat output "$output-2"
 	mv "$output-2" "$output"
 fi
