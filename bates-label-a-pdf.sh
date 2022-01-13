@@ -19,9 +19,9 @@ output=$dir/$name-bates.pdf
 
 ##### generate labeling pdf to overlay #####
 "$generate" "$data" "$multistamp"
-"$pdftk" "$multistamp" output "$multistamp-compressed" compress
+pdftk "$multistamp" output "$multistamp-compressed" compress   #gatorback: invoke : pdftk-java, installed via homebrew instead  
 mv "$multistamp-compressed" "$multistamp"
 
 ##### overlay labeling pdf on input pdf #####
-"$pdftk" "$1" multistamp "$multistamp" output "$output"
+pdftk "$1" multistamp "$multistamp" output "$output"
 
