@@ -1,5 +1,5 @@
 if [ $# != 1 ]; then
-	echo "error: this script requires a single argument"
+	echo "error: this script requires a single argument: input.pdf"
 	exit 1
 fi
 
